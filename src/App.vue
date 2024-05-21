@@ -29,7 +29,7 @@ const transactions = ref([
 // Get total
 const total = computed(() => {
   return transactions.value.reduce((acc, transaction) => {
-    return acc + transaction.amount;
+    return acc + parseInt(transaction.amount);
   }, 0);
 });
 
